@@ -44,7 +44,7 @@ export default function Home() {
       />
       <div
         className={cn(
-          "overflow-hidden mb-2 transition-all ease-out",
+          "overflow-hidden mb-2 transition-all ease-out rounded-md",
           showBackground ? themes[theme].background : "ring ring-neutral-900"
         )}
         style={{ padding }}
