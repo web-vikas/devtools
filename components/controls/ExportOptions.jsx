@@ -1,10 +1,12 @@
+"use client";
+
 import React from 'react'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '../ui/dropdown-menu'
 import { Button } from '../ui/button'
 import { DownloadIcon, ImageIcon, Link2Icon, Share2Icon } from '@radix-ui/react-icons'
 import { toBlob, toPng, toSvg } from 'html-to-image'
 import toast from 'react-hot-toast'
-import useStore from '@/app/store'
+import useStore from '@/app/(root)/store'
 
 const ExportOptions = ({ targetRef }) => {
 

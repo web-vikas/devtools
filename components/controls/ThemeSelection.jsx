@@ -1,8 +1,8 @@
 import React from 'react'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
-import { themes } from '@/app/options'
+import { themes } from '@/app/(root)/options'
 import { cn } from '@/lib/utils'
-import useStore from '@/app/store'
+import useStore from '@/app/(root)/store'
 
 const ThemeSelection = () => {
 

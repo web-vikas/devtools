@@ -1,11 +1,11 @@
 'use client'
-import { codeSnippets, fonts, languages } from '@/app/options'
+import { codeSnippets, fonts, languages } from '@/app/(root)/options'
 import { useEffect } from 'react'
 import { cn } from '@/lib/utils'
 import hljs from 'highlight.js'
 import React from 'react'
 import Editor from 'react-simple-code-editor'
-import useStore from '@/app/store'
+import useStore from '@/app/(root)/store'
 import flourite from 'flourite'
 const CodeEditor = () => {
     const store = useStore()
@@ -33,7 +33,7 @@ const CodeEditor = () => {
                 "bg-black/75 border-gray-600/40" :
                 "bg-white/75 border-gray-200/20"
         )}
-            onClick={() => useStore.setState({ darkMode: !store.darkMode })}
+        // onClick={() => useStore.setState({ darkMode: !store.darkMode })}
         >
             <header className="grid grid-cols-6 gap-3 items-center px-4 py-3">
                 <div className='flex gap-1.5'>

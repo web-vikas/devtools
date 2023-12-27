@@ -8,6 +8,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ExportOptions from "@/components/controls/ExportOptions";
 import ThemeSelection from "@/components/controls/ThemeSelection";
+import DarkMode from "@/components/controls/DarkMode";
+import Padding from "@/components/controls/Padding";
+import LanguageSelect from "@/components/controls/LanguageSelect";
 export default function Home() {
   const theme = useStore((state) => state.theme);
   const padding = useStore((state) => state.padding);
@@ -55,6 +58,9 @@ export default function Home() {
       <Card className="fixed bottom-16 py-6 px-8 mx-6 bg-neutral-900/90 backdrop-blur">
         <CardContent className="flex flex-wrap gap-6 p-0 items-center">
           <ThemeSelection />
+          <LanguageSelect />
+          <DarkMode />
+          <Padding />
           <div className="mt-5">
             <ExportOptions targetRef={editorRef} />
           </div>
