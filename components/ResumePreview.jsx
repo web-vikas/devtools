@@ -87,13 +87,14 @@ const ResumePreview = ({ formData, qualifications, professionalQualifications, r
                                     </td>
                                     <td align="center" style={{ border: "1px solid black" }}>
                                         <b>Board / University</b>
+                                    </td> 
+                                    <td align="center" style={{ border: "1px solid black" }}>
+                                        <b>School</b>
                                     </td>
                                     <td align="center" style={{ border: "1px solid black" }}>
                                         <b>Percentage</b>
                                     </td>
-                                    <td align="center" style={{ border: "1px solid black" }}>
-                                        <b>Marks</b>
-                                    </td>
+
                                     <td align="center" style={{ border: "1px solid black" }}>
                                         <b>Division</b>
                                     </td>
@@ -107,11 +108,12 @@ const ResumePreview = ({ formData, qualifications, professionalQualifications, r
                                             {qualification.board}
                                         </td>
                                         <td style={{ border: "1px solid black" }} align="center">
-                                            {qualification.percentage}
-                                        </td>
-                                        <td style={{ border: "1px solid black" }} align="center">
                                             {qualification.marks}
                                         </td>
+                                        <td style={{ border: "1px solid black" }} align="center">
+                                            {qualification.percentage}
+                                        </td>
+                            
                                         <td style={{ border: "1px solid black" }} align="center">
                                             {qualification.division}
                                         </td>
