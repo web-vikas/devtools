@@ -1,12 +1,10 @@
-import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { Toaster } from "react-hot-toast";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header";
 
 export const metadata = {
-  title: "DevTools | Dashboard",
-  description: "hanks Man !",
+  title: "DevTools | Resume Builder",
+  description: "Thanks Man !",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
@@ -18,7 +16,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
+        <Header />
         {children}
         <Toaster />
       </body>
